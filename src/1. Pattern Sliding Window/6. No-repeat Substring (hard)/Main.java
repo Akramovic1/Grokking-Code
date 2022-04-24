@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
-    public static int FruitsIntoBaskets(String str){
+    public static int NoRepeatSubstring(String str){
       int max  = Integer.MIN_VALUE;
       int windowStart = 0;
       Map<Character, Integer> windowFreq = new HashMap<>();
@@ -20,7 +20,7 @@ public class Main {
       return max;
     }
     public static void main(String[]args) {
-        int result = FruitsIntoBaskets("abccde");
+        int result = NoRepeatSubstring("abccde");
         System.out.println(result);
     }
 }
