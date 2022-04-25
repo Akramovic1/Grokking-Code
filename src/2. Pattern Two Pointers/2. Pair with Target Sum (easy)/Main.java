@@ -12,8 +12,20 @@ public class Main {
         }
         return new int[]{-1,-1};
     }
+    public static int[] twoSum(int[] arr, int target) {
+        HashMap<Integer,Integer> indexMap = new HashMap<Integer,Integer>();
+        int tmp = 0;
+        for(int i = 0; i < arr.length; i++){
+            tmp = target - arr[i];
+            if(indexMap.containsKey(tmp)){
+                return new int[]{indexMap.get(tmp), i};
+            }
+            indexMap.put(arr[i],i);
+        }
+        return null;
+    }
     public static void main(String[]args) {
-        int[] result = PairWithTargetSum(new int[]{1,2,3,4,6}, 6);
+        int[] result = twoSum(new int[]{3,2,4}, 6);
         System.out.println(Arrays.toString(result));
     }
 }
