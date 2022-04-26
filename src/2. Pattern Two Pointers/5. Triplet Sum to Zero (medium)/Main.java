@@ -18,7 +18,7 @@ public class Main {
                 triplet.add(Arrays.asList(-target,arr[left],arr[right]));
                 right--;left++;
                 while (left < right && arr[left] == arr[left - 1])     left++;
-                while (left < right && arr[right] == arr[right - 1])    right--;
+                while (left < right && arr[right] == arr[right + 1])    right--;
             } else if (sum < target)    left++;
             else right--;
         }
