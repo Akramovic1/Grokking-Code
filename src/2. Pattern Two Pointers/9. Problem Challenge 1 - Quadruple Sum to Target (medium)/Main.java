@@ -14,7 +14,7 @@ public class Main {
             if (i > 0 && arr[i] == arr[i - 1])  continue;
             for (int j = 0; j < arr.length - 2; j++){
                 if (j > i + 1 && arr[j] == arr[j - 1])  continue;
-                left = j + 1;
+                left = j + 1;right = arr.length - 1;
                 while (left < right){
                     sum = arr[i] + arr[j] + arr[left] + arr[right];
                     if (target == sum){
