@@ -10,8 +10,8 @@ public class Main {
         while (p1 >= 0 || p2 >= 0) {
             p1 = updateIndex(s,p1);
             p2 = updateIndex(t,p2);
-            if (p1 == 0 && p2 == 0) return true;
-            if (p1 == 0 || p2 == 0) return false;
+            if (p1 < 0 && p2 < 0) return true;
+            if (p1 < 0 || p2 < 0) return false;
             if (s.charAt(p1) != t.charAt(p2)) return false;
             p1--;p2--;
         }
