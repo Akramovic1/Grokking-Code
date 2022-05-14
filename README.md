@@ -1,4 +1,4 @@
-# Grokking-the-Coding-Interview-Patterns-for-Coding-Questions
+# Grokking-theCoding
 
 ## 1. Pattern: Sliding Window
 - Maximum Sum Subarray of Size K (easy)
