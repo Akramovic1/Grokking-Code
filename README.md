@@ -1,4 +1,4 @@
-# Grokking-theCoding
+# Grokking-theCode
 
 ## 1. Pattern: Sliding Window
 - Maximum Sum Subarray of Size K (easy)
